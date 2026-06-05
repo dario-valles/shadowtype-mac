@@ -1,27 +1,21 @@
-# Homebrew Cask for Shadowtype — DRAFT.
+# Homebrew Cask for Shadowtype.
 #
-# Blocked until a stable PUBLIC download URL exists. Today the macOS build is
-# delivered behind an email gate (shadowtype.app/download), which Homebrew can't
-# consume. To activate this cask:
-#   1. Publish a versioned, unauthenticated artifact, e.g.
-#        https://shadowtype.app/releases/Shadowtype-<version>.zip
-#      (or attach the .dmg/.zip to this repo's GitHub Releases).
-#   2. Set `version` and replace `sha256 :no_check` with the real checksum:
-#        curl -L -o st.zip https://shadowtype.app/releases/Shadowtype-<version>.zip
-#        shasum -a 256 st.zip
-#   3. Point `url` at the public artifact.
-#   4. Test:  brew install --cask ./Casks/shadowtype.rb
-#
-# This lives in a personal tap (dario-valles/homebrew-shadowtype), which has NO
+# Lives in the personal tap dario-valles/homebrew-shadowtype, which has NO
 # star/notability gate — unlike submitting to homebrew/homebrew-cask, which
 # requires the app repo to clear 75+ stars first.
+#
+# Artifact is the GitHub Release asset (stable public URL). Shadowtype also
+# self-updates in-app from dl.shadowtype.app, so `auto_updates true`.
+#
+# On a new release, bump `version` and `sha256`:
+#   shasum -a 256 Shadowtype-<version>.zip
 
 cask "shadowtype" do
   version "0.2.1"
-  sha256 :no_check # TODO: pin once a public versioned artifact is published
+  sha256 "1c35f78843e0e255462ccf2778476691e127bfd0fdc2fd3d3776b67c1153e736"
 
-  url "https://shadowtype.app/releases/Shadowtype-#{version}.zip",
-      verified: "shadowtype.app/"
+  url "https://github.com/dario-valles/shadowtype-mac/releases/download/v#{version}/Shadowtype-#{version}.zip",
+      verified: "github.com/dario-valles/shadowtype-mac/"
   name "Shadowtype"
   desc "Private, on-device AI autocomplete for macOS"
   homepage "https://shadowtype.app/"

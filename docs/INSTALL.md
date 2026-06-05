@@ -14,15 +14,20 @@
 
 Shadowtype keeps itself up to date automatically.
 
-## Option 2 — Homebrew (coming soon)
-
-A community Homebrew tap is in the works. Once it's live you'll be able to:
+## Option 2 — Homebrew (community tap)
 
 ```sh
 brew install --cask dario-valles/shadowtype/shadowtype
 ```
 
-For now, use the direct download above. ⭐ Star the repo to be notified when the tap ships.
+Or in two steps:
+
+```sh
+brew tap dario-valles/shadowtype
+brew install --cask shadowtype
+```
+
+Update later with `brew upgrade --cask shadowtype`.
 
 ## First launch
 

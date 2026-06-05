@@ -54,9 +54,13 @@ https://shadowtype.app — see the live demo on the homepage.
 
 → **[Download for macOS](https://shadowtype.app/download)** — Apple Silicon (M1+), macOS 14+.
 
-**Homebrew** — 🚧 _coming soon_ (a community tap is in the works).
+**Homebrew** (community tap):
 
-See **[docs/INSTALL.md](docs/INSTALL.md)** for first-launch steps.
+```sh
+brew install --cask dario-valles/shadowtype/shadowtype
+```
+
+See **[docs/INSTALL.md](docs/INSTALL.md)** for tap setup and first-launch steps.
 
 ## Pricing
 
