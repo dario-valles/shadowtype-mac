@@ -1,0 +1,47 @@
+name: 🐛 Bug report
+description: Something in Shadowtype isn't working
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Type … in …
+        3. See …
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: Which app / website were you typing in?
+      placeholder: "e.g. Mail, Slack, Chrome on gmail.com"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Shadowtype version
+      placeholder: "e.g. 0.2.1 — see the menu bar icon → About"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version & chip
+      placeholder: "e.g. macOS 15.1, M2"
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots or screen recordings help a lot. Never paste sensitive text.

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Question or help
+    url: https://github.com/dario-valles/shadowtype-mac/discussions
+    about: Ask questions and discuss Shadowtype here.
+  - name: 📧 Private support
+    url: mailto:support@shadowtype.app
+    about: For account, license, or anything you'd rather not post publicly.
+  - name: 🌐 Website & FAQ
+    url: https://shadowtype.app
+    about: Download, pricing, and frequently asked questions.
