@@ -15,6 +15,10 @@ Runs a local LLM on Apple Silicon. **Nothing ever leaves your machine.** Pay onc
 
 **[shadowtype.app](https://shadowtype.app)** · [Download](https://shadowtype.app/download) · [FAQ](docs/FAQ.md) · [Install](docs/INSTALL.md) · [Report a bug](https://github.com/dario-valles/shadowtype-mac/issues/new/choose)
 
+<br/>
+
+<img src="docs/media/hero-mail.png" width="760" alt="Shadowtype suggesting ghost text inline in Apple Mail — press Tab to accept" />
+
 </div>
 
 ---
